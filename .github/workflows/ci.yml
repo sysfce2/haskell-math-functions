@@ -18,38 +18,40 @@ jobs:
       matrix:
         include:
           # -- Linux --
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.0.2"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.2.2"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.4.4"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.6.5"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.8.4"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "8.10.7" }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.0.2"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.2.8"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.4.8"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.4.8", flags: "-system-erf"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.4.8", flags: "-system-expm1"}
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.6.4"  }
-          - { cabal: "3.10", os: ubuntu-latest,  ghc: "9.8.2"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.0.2"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.2.2"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.4.4"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.6.5"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.8.4"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "8.10.7" }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.0.2"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.2.8"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.4.8"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.4.8", flags: "-system-erf"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.4.8", flags: "-system-expm1"}
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.6.7"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.8.4"  }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.10.2" }
+          - { cabal: "3.14", os: ubuntu-latest,  ghc: "9.12.2" }
           # -- Win --
-          - { cabal: "3.10", os: windows-latest, ghc: "8.4.4"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "8.6.5"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "8.8.4"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "8.10.7" }
-          - { cabal: "3.10", os: windows-latest, ghc: "9.0.2"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "9.2.8"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "9.4.8"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "9.6.4"  }
-          - { cabal: "3.10", os: windows-latest, ghc: "9.8.2"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "8.4.4"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "8.6.5"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "8.8.4"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "8.10.7" }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.0.2"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.2.8"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.4.8"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.6.7"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.8.4"  }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.10.2" }
+          - { cabal: "3.14", os: windows-latest, ghc: "9.12.2" }
           # MacOS
-          - { cabal: "3.10", os: macOS-latest,   ghc: "8.4.4"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "8.6.5"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "8.8.4"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "8.10.7" }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "9.2.8"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "9.4.8"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "9.6.4"  }
-          - { cabal: "3.10", os: macOS-latest,   ghc: "9.8.2"  }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.2.8"  }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.4.8"  }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.6.7"  }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.8.4"  }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.10.2" }
+          - { cabal: "3.14", os: macOS-latest,   ghc: "9.12.2" }
       fail-fast: false
 
     steps:
@@ -59,7 +61,7 @@ jobs:
         echo M1 ${{ matrix.ghc }}
         echo M2 ${{ matrix.skip-bench }}
     # ----------------
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     # ----------------
     - uses: haskell-actions/setup@v2
       id: setup-haskell-cabal
@@ -72,7 +74,7 @@ jobs:
       name: Cache ~/.cabal/store
       with:
         path: ${{ steps.setup-haskell-cabal.outputs.cabal-store }}
-        key: ${{ runner.os }}-${{ matrix.ghc }}--${{ github.Shah }}
+        key: ${{ runner.os }}-${{ matrix.ghc }}--
     # ----------------
     - name: "Install PAPI"
       run: |
@@ -94,10 +96,12 @@ jobs:
         mkdir unpacked
         tar -C unpacked -xzf sdist/math-function*tar.gz
         cd unpacked
+        mv math-functions-*/* .
     # ----------------
     - name: cabal check
       run: |
         cabal -vnormal check
+      working-directory: unpacked/
     # ----------------
     - name: Build
       run: |
@@ -105,7 +109,9 @@ jobs:
         if [ "${{ matrix.skip-bench }}" == "" ]; then FLAG_BENCH=--enable-benchmarks; fi
         cabal configure $FLAG_PAPI $FLAG_TEST $FLAG_BENCH --flags='${{matrix.flags}}'
         cabal build all --write-ghc-environment-files=always
+      working-directory: unpacked/
     # ----------------
     - name: Test
       run: |
         cabal test all
+      working-directory: unpacked/
